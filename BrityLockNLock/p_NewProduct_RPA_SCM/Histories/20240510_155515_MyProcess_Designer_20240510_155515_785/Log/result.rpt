@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="9d750e41-5f7b-453c-8d62-6ffc591cde8f" name="MyProcess" result="Pass" detail="{}" start="2024-05-10T08:55:17.418" end="2024-05-10T08:55:34.814" jobId="Designer_20240510_155515_785">
+  <Step id="S23aa70b068ac4b25adf3c7625fdd18ac" taskName="MyProcess" type="Flow" name="RunTask" displayName="RunTask ('T1_before_Task')" callDepth="1" depth="1" num="1" result="Pass" start="2024-05-10T08:55:17.467" end="2024-05-10T08:55:17.531" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="T1_before_Task" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S64ba49f48afa47b092176e86cbdd4f53" taskName="T1_before_Task" type="Flow" name="RunTask" displayName="RunTask ('tco_kill_process')" callDepth="2" depth="1" num="1" result="Pass" start="2024-05-10T08:55:17.537" end="2024-05-10T08:55:17.538" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="tco_kill_process" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S87a80ebb00f1497f85cd370223b66663" taskName="tco_kill_process" type="Win" name="CloseAll" displayName="CloseAll" callDepth="3" depth="1" num="1" result="Pass" start="2024-05-10T08:55:17.553" end="2024-05-10T08:55:18.594" displayTime="1s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="Kill Excel" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'excel.exe'" runtimeType="String" key="Application_ProcessName" displayKey="Application" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="Options_Force" displayKey="Force" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S97fd7e0ed2fd433c8c3bace9c4cf74bd" taskName="tco_kill_process" type="Win" name="CloseAll" displayName="CloseAll" callDepth="3" depth="1" num="4" result="Pass" start="2024-05-10T08:55:18.610" end="2024-05-10T08:55:19.633" displayTime="1s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="Kill chrome" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'chrome.exe'" runtimeType="String" key="Application_ProcessName" displayKey="Application" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="Options_Force" displayKey="Force" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sa791ab34ea0f46628dbca43b5a27fe2d" taskName="tco_kill_process" type="Flow" name="InternalData" displayName="End-RunTask ('tco_kill_process') / Return To 'T1_before_Task'" callDepth="3" depth="1" num="" result="Internal" start="2024-05-10T08:55:19.640" end="2024-05-10T08:55:19.640" displayTime="0s" />
+  <Step id="Sbead5a5230b444ceb6bf2294c359c68e" taskName="T1_before_Task" type="Flow" name="Block" displayName="Block" callDepth="2" depth="1" num="2" result="Pass" start="2024-05-10T08:55:19.656" end="2024-05-10T08:55:19.658" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="전처리" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sf8b9ecbc42f14fcb88c646423f5b09b0" taskName="T1_before_Task" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="2" depth="2" num="3" result="Pass" start="2024-05-10T08:55:19.672" end="2024-05-10T08:55:19.672" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="이어달리기 용도로 사용&#xD;&#xA;n.co.skip_excel=false로 되어 있어야 Default" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;Too Long&gt; //-------------------------------------&#xD;&#xA;//TASK : tall_config 호출전에 &#xD;&#xA;//       n변수에 노드변수를 설정해야 함&#xD;&#xA;//d ... 403 more" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S8975f1f04dc1428db16185565f43821f" taskName="T1_before_Task" type="Flow" name="RunTask" displayName="RunTask ('tco_config')" callDepth="2" depth="2" num="4" result="Pass" start="2024-05-10T08:55:19.688" end="2024-05-10T08:55:19.692" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="tco_config" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S45bab63c4786483698a629950d8440a0" taskName="tco_config" type="Flow" name="DecisionThen" displayName="IfThen" callDepth="3" depth="1" num="3" result="Pass" start="2024-05-10T08:55:19.704" end="2024-05-10T08:55:19.706" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="typeof(n.co.skip_excel) == &quot;undefined&quot; || n.co.skip_excel == false" runtimeType="String" key="Conditions_Expression" displayKey="IfThen Condition" visible="false" required="true" />
+      <Property value="true" runtimeType="Boolean" key="Conditions_CombineCondition" displayKey="Combine Condition" visible="false" required="false" />
+      <Property value="true" runtimeType="Boolean" key="Conditions_Expression1" displayKey="Condition" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="Conditions_AddCondition" displayKey="Add Condition" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sc972bbc7e1a2424e90fdfec2fd3a95e9" taskName="tco_config" type="Excel" name="OpenExcel" displayName="OpenExcel" callDepth="3" depth="2" num="4" result="Pass" start="2024-05-10T08:55:19.720" end="2024-05-10T08:55:22.911" displayTime="3.2s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="h.excel.macro : &lt;undefined&gt;" runtimeType="Undefined" key="Output_OutputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'C:\\BrityLockNLock\\1. Config\\macro.xlsm'" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="File_Invisible" displayKey="Invisible" visible="true" required="false" />
+      <Property value="true" runtimeType="Boolean" key="File_ReadOnly" displayKey="ReadOnly" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="File_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="File_ExecuteShell" displayKey="Execute Shell" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="File_Timeout" displayKey="Timeout" visible="false" required="true" />
+      <Property value="false" runtimeType="Boolean" key="File_UsePassword" displayKey="UsePassword" visible="true" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_OpenPassword" displayKey="OpenPassword" visible="false" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_WritePassword" displayKey="WritePassword" visible="false" required="false" />
+      <Property value="Comma(,)" runtimeType="String" key="File_TextDelimiter" displayKey="Text Delimiter" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S35e65cc4f0c040719be071d6a0a6338f" taskName="tco_config" type="Excel" name="ExecuteMacro" displayName="ExecuteMacro" callDepth="3" depth="2" num="5" result="Pass" start="2024-05-10T08:55:22.929" end="2024-05-10T08:55:23.433" displayTime="0.5s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Workbook" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'init'" runtimeType="String" key="File_MacroName" displayKey="MacroName" visible="true" required="true" />
+      <Property value="'config{`p1{`m1'" runtimeType="String" key="File_Params" displayKey="Parameters" visible="true" required="false" />
+      <Property value="'Sheet1'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S01120c5dd0f34d6f923b5180596a0620" taskName="tco_config" type="Excel" name="CloseExcel" displayName="CloseExcel" callDepth="3" depth="2" num="6" result="Pass" start="2024-05-10T08:55:23.438" end="2024-05-10T08:55:34.699" displayTime="11.3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Workbook" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="File_Force" displayKey="Force" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S902ba0407b5b4a8784a25eacbd6ce2f6" taskName="tco_config" type="Flow" name="EndDecisionThen" displayName="End-IfThen" callDepth="3" depth="2" num="7" result="Pass" start="2024-05-10T08:55:34.701" end="2024-05-10T08:55:34.701" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sfd50655a7aeb4aa49af6ac3ab6947269" taskName="tco_config" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="3" depth="1" num="8" result="Pass" start="2024-05-10T08:55:34.717" end="2024-05-10T08:55:34.736" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="--Ignore--" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;Too Long&gt; Script.rpa.load();&#xD;&#xA;&#xD;&#xA;Script.rpa.log('= Script.rpa.load()');&#xD;&#xA;&#xD;&#xA;Script.rpa.log (Script.rpa.members(d ... 5 more" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Se4310e79f3fd4dfc91c5efb4f6b2c2eb" taskName="tco_config" type="Desktop" name="GetSpecialFolder" displayName="GetSpecialFolder" callDepth="3" depth="1" num="9" result="Pass" start="2024-05-10T08:55:34.749" end="2024-05-10T08:55:34.752" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="C:\Users\jihye\Documents\" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="MyDocuments" runtimeType="String" key="Command_FolderType" displayKey="FolderType" visible="true" required="true" />
+      <Property value="d.path.down_origin2 : &lt;undefined&gt;" runtimeType="Undefined" key="Command_Output" displayKey="Output" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sd231ebaf79ba48bd900d24535d9e654e" taskName="tco_config" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="3" depth="1" num="10" result="Pass" start="2024-05-10T08:55:34.764" end="2024-05-10T08:55:34.766" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="&lt;Too Long&gt; // 다운로드&#xD;&#xA;d.path.down_origin2 = d.path.down_origin2.slice(0,-10);&#xD;&#xA;d.path.down_origin2 = d.path.down_ ... 169 more" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9d3b0200ce534ab295b5396303610fe1" taskName="tco_config" type="Flow" name="InternalData" displayName="End-RunTask ('tco_config') / Return To 'T1_before_Task'" callDepth="3" depth="1" num="" result="Internal" start="2024-05-10T08:55:34.766" end="2024-05-10T08:55:34.766" displayTime="0s" />
+  <Step id="S8498a872428249a5a6fd4ce4d675f950" taskName="T1_before_Task" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="2" depth="2" num="5" result="Pass" start="2024-05-10T08:55:34.780" end="2024-05-10T08:55:34.784" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="이어달리기 용도로 사용" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Script.rpa.saveVariable();&#xD;&#xA;//Script.rpa.loadVariable();" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sd97ace96c2a24b0490f658bdb8348627" taskName="T1_before_Task" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="2" depth="2" num="6" result="Pass" start="2024-05-10T08:55:34.796" end="2024-05-10T08:55:34.805" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;Too Long&gt; /* - LOG_CREATE - &#xD;&#xA;인수0 : n.co_logc.create_fld        //LOG || DUMMY&#xD;&#xA;---------------------*/&#xD;&#xA;&#xD;&#xA;n.c ... 88 more" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sb0b951054b4a434dbabaf2eadcd2ece0" taskName="T1_before_Task" type="Flow" name="EndBlock" displayName="End-Block" callDepth="2" depth="2" num="8" result="Pass" start="2024-05-10T08:55:34.812" end="2024-05-10T08:55:34.812" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="전처리" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sa518f79cdcf440c0b62347c620953db0" taskName="T1_before_Task" type="Flow" name="InternalData" displayName="End-RunTask ('T1_before_Task') / Return To 'MyProcess'" callDepth="2" depth="2" num="" result="Internal" start="2024-05-10T08:55:34.814" end="2024-05-10T08:55:34.814" displayTime="0s" />
+  <JobInfo>
+    <Info name="Bot Version" value="3.1.124.00426" />
+    <Info name="Resolution" value="1920 x 1080" />
+    <Info name="Language" value="English (United States)" />
+    <Info name="BotID" value="DESIGNER-UC10B" />
+  </JobInfo>
+</Result>

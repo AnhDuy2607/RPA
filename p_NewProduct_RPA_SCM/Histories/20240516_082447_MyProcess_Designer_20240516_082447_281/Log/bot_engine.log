@@ -1,0 +1,756 @@
+﻿2024-05-15 18:27:34,997 [T1] INFO  EngineStarter
+BOT Engine Start - v3.1.124.00426 at 5/15/2024 6:27:34 PM
+EngineID: D_20240515_182733_264
+PID : 17468
+PPID: 15780
+Working Directory: C:\Users\PC\AppData\Roaming\Brity RPA Designer
+
+2024-05-15 18:27:35,010 [T1] INFO  EngineStarter
+System Language: en-US
+Resolution: 3840 x 1132
+
+2024-05-15 18:27:35,305 [T1] INFO  Config
+Initialize Config
+
+2024-05-15 18:27:35,325 [T1] DEBUG Config
+Config Loaded
+
+2024-05-15 18:27:35,326 [T1] DEBUG Config
+Backup config file.
+
+2024-05-15 18:27:35,332 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2024-05-15 18:27:35,335 [T1] INFO  Config
+Initialize Resource Config
+
+2024-05-15 18:27:35,350 [T1] DEBUG Config
+Refresh Language Information
+
+2024-05-15 18:27:36,179 [T1] INFO  Config
+All Config Initialized.
+
+2024-05-15 18:27:36,183 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2024-05-15 18:27:36,185 [T1] DEBUG KeyManager
+Load device unique id.
+
+2024-05-15 18:27:36,191 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2024-05-15 18:27:36,219 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2024-05-15 18:27:36,222 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2024-05-15 18:27:36,263 [T4] DEBUG JobService
+Connect to agent service
+
+2024-05-15 18:27:36,279 [T4] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2024-05-15 18:27:36,279 [T4] DEBUG JobService
+Open connection
+
+2024-05-15 18:27:36,287 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2024-05-15 18:27:36,288 [T4] DEBUG JobService
+Register engine to agent
+
+2024-05-15 18:27:36,296 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2024-05-15 18:27:36,300 [T4] DEBUG JobService
+Engine is connected to agent service.
+
+2024-05-15 18:27:36,300 [T4] DEBUG JobService
+Owner Process PID: 15780
+
+2024-05-15 18:27:36,306 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Chrome
+
+2024-05-15 18:27:36,311 [T4] INFO  JobService
+Start monitoring owner process is terminated.
+
+2024-05-15 18:27:36,540 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Desktop
+
+2024-05-15 18:27:36,690 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Excel
+
+2024-05-15 18:27:36,816 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Flow
+
+2024-05-15 18:27:36,906 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.IE
+
+2024-05-15 18:27:37,128 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ImageConverter
+
+2024-05-15 18:27:37,176 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ImageRecognition
+
+2024-05-15 18:27:37,330 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.MicrosoftOCR
+
+2024-05-15 18:27:37,374 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Net
+
+2024-05-15 18:27:37,466 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Orchestra
+
+2024-05-15 18:27:37,535 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ProcessFlow
+
+2024-05-15 18:27:37,595 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.SAP
+
+2024-05-15 18:27:37,653 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Web
+
+2024-05-15 18:27:37,730 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Win
+
+2024-05-15 18:27:37,846 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,3840,1132
+
+2024-05-15 18:27:37,963 [T1] DEBUG AddInLoader
+Load Assembly : BrityRPA.AddIn.NativeApp
+
+2024-05-15 18:27:38,064 [T1] DEBUG AddInLoader
+Load Assembly : BrityWorks.AddIn.Outlook
+
+2024-05-15 18:27:38,124 [T1] DEBUG AddInLoader
+Load Assembly : BrityWorks.AddIn.Pdf
+
+2024-05-15 18:27:38,260 [T1] DEBUG LibraryManager
+Load Library - Chrome
+
+2024-05-15 18:27:38,275 [T1] DEBUG LibraryManager
+Load Library - Desktop
+
+2024-05-15 18:27:38,291 [T1] DEBUG LibraryManager
+Load Library - Excel
+
+2024-05-15 18:27:38,306 [T1] DEBUG LibraryManager
+Load Library - Flow
+
+2024-05-15 18:27:38,322 [T1] DEBUG LibraryManager
+Load Library - IE
+
+2024-05-15 18:27:38,337 [T1] DEBUG LibraryManager
+Load Library - ImageConverter
+
+2024-05-15 18:27:38,352 [T1] DEBUG LibraryManager
+Load Library - ImageRecognition
+
+2024-05-15 18:27:38,367 [T1] DEBUG LibraryManager
+Load Library - MicrosoftOCR
+
+2024-05-15 18:27:38,383 [T1] DEBUG LibraryManager
+Load Library - NativeApp
+
+2024-05-15 18:27:38,398 [T1] DEBUG LibraryManager
+Load Library - Net
+
+2024-05-15 18:27:38,414 [T1] DEBUG LibraryManager
+Load Library - Orchestra
+
+2024-05-15 18:27:38,429 [T1] DEBUG LibraryManager
+Load Library - Outlook
+
+2024-05-15 18:27:38,444 [T1] DEBUG LibraryManager
+Load Library - Pdf
+
+2024-05-15 18:27:38,460 [T1] DEBUG LibraryManager
+Load Library - SAP
+
+2024-05-15 18:27:38,475 [T1] DEBUG LibraryManager
+Load Library - Web
+
+2024-05-15 18:27:38,490 [T1] DEBUG LibraryManager
+Load Library - Win
+
+2024-05-15 18:27:38,505 [T1] DEBUG LibraryManager
+Load Library - WorkFlow
+
+2024-05-15 18:27:38,510 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2024-05-15 18:27:38,702 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2024-05-15 18:27:38,710 [T1] INFO  App
+Launch Arguments: Total: 6 |  -eid D_20240515_182733_264 -runtype ProcRunner -ppid 15780
+
+2024-05-15 18:27:38,711 [T1] DEBUG Config
+Refresh Language Information
+
+2024-05-15 18:27:38,711 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2024-05-16 08:24:47,665 [T10] INFO  JobService
+Start Job: MyProcess (Foreground)
+{
+  "JobType": 1,
+  "State": 0,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "StartTime": "2024-05-16 08:24:47",
+  "EndTime": null,
+  "JobId": "Designer_20240516_082447_281",
+  "UserAuthentication": null,
+  "ProcessPath": "C:\\BrityLockNLock\\p_NewProduct_RPA_SCM\\MyProcess.proc",
+  "ProcessId": "9d750e41-5f7b-453c-8d62-6ffc591cde8f",
+  "ProcessVer": "",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 15780,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "EngineID": "D_20240515_182733_264",
+  "EnginePID": 0,
+  "EngineRecommededVersion": "",
+  "JobWorkDir": "C:\\BrityLockNLock\\p_NewProduct_RPA_SCM\\Histories\\20240516_082447_MyProcess_Designer_20240516_082447_281",
+  "JobLogDir": "C:\\BrityLockNLock\\p_NewProduct_RPA_SCM\\Histories\\20240516_082447_MyProcess_Designer_20240516_082447_281\\Log",
+  "JobScreenshotDir": "C:\\BrityLockNLock\\p_NewProduct_RPA_SCM\\Histories\\20240516_082447_MyProcess_Designer_20240516_082447_281\\Log\\Screenshot"
+}
+
+2024-05-16 08:24:48,035 [T6] DEBUG JobService
+Waiting library loading...
+
+2024-05-16 08:24:48,038 [T6] DEBUG Config
+Reload User Settings
+
+2024-05-16 08:24:48,049 [T6] INFO  JobService
+Config Loading Completed.
+
+2024-05-16 08:24:48,049 [T6] DEBUG JobService
+Config Loading Time: 14 ms.
+
+2024-05-16 08:24:48,057 [T6] DEBUG JobService
+Check Shared Token
+
+2024-05-16 08:24:48,058 [T6] DEBUG TokenManager
+Load connection token
+
+2024-05-16 08:24:48,059 [T6] DEBUG TokenManager
+Clear Connection Token - No Shared Token
+
+2024-05-16 08:24:48,065 [T6] DEBUG ServerInformationClient
+get server features for engine bot from config.
+
+2024-05-16 08:24:48,067 [T6] INFO  Config
+Try to load server features from config.
+
+2024-05-16 08:24:48,068 [T6] INFO  TokenManager
+SecurityType : v2
+
+2024-05-16 08:24:48,070 [T6] INFO  JobService
+Shared Token - No Token
+
+2024-05-16 08:24:48,074 [T6] INFO  JobManager
+Create JobManager instance for job MyProcess(Designer_20240516_082447_281)
+
+2024-05-16 08:24:48,080 [T6] INFO  JobRequest
+Job ID : Designer_20240516_082447_281
+Project Path  : C:\BrityLockNLock\p_NewProduct_RPA_SCM\p_NewProduct_RPA_SCM.proj
+Process Name  : MyProcess
+Engine Mode   : Designer
+Requester Type: Designer
+Requester PID : 15780
+
+2024-05-16 08:24:48,083 [T8] INFO  JobRequest
+Start Callback Sender
+
+2024-05-16 08:24:48,083 [T8] DEBUG JobRequest
+Step Callback Interval: 500
+
+2024-05-16 08:24:48,117 [T6] DEBUG ProjectManager
+Set Project Information
+
+2024-05-16 08:24:48,145 [T6] INFO  PlayOptionManager
+PlayOption
+- Step Interval : 1
+- Disable DrawBounds : False
+- Invoke First : False
+- Allow Upload of DumpScreen results : False
+
+2024-05-16 08:24:48,146 [T6] INFO  JobRunner
+Initialize Script Engine
+
+2024-05-16 08:24:48,164 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2024-05-16 08:24:48,182 [T8] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2024-05-16 08:24:49,919 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2024-05-16 08:24:49,926 [T8] DEBUG JobRequest
+Callback - State: Ready
+
+
+2024-05-16 08:24:49,967 [T6] INFO  JobRunnerHook
+HotKey Hook Started
+
+2024-05-16 08:24:49,967 [T6] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2024-05-16 08:24:49,968 [T5-ScriptEngine] INFO  JobRunner
+RunProcess start
+
+2024-05-16 08:24:49,970 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2024-05-16 08:24:49,970 [T5-ScriptEngine] INFO  JobRequest
+Last job life cycle state: Running
+
+2024-05-16 08:24:49,973 [T8] DEBUG JobRequest
+Callback - State: Starting
+
+
+2024-05-16 08:24:49,988 [T8] DEBUG JobRequest
+Callback - State: Running
+
+
+2024-05-16 08:24:50,059 [T5-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play MyProcess,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-16 08:24:50,074 [T5-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play T1_before_Task,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-16 08:24:50,083 [T5-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play tco_kill_process,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-16 08:24:50,091 [T5-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play tco_config,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-16 08:24:50,204 [T5-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play T_출하실적_Shipment_Performance,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-16 08:24:51,140 [T5-ScriptEngine] DEBUG ScreenCapture
+DirectX Screen Capture Initialized.
+
+2024-05-16 08:24:51,231 [T5-ScriptEngine] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2024-05-16 08:24:51,252 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - MyProcess
+##############################################################
+9d750e41-5f7b-453c-8d62-6ffc591cde8f
+MyProcess
+
+
+2024-05-16 08:24:51,296 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 1: S23aa70b068ac4b25adf3c7625fdd18ac (1/3) - (1/37)
+ - [1] RunTask
+
+
+2024-05-16 08:24:51,365 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T1_before_Task
+##############################################################
+2537983c-d928-4592-8529-c1fd941c700d
+T1_before_Task
+
+
+2024-05-16 08:24:51,383 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T1_before_Task
+**************************************************************
+ - STEP 2: S64ba49f48afa47b092176e86cbdd4f53 (1/8) - (2/37)
+ - [1] RunTask
+
+
+2024-05-16 08:24:51,384 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - tco_kill_process
+##############################################################
+a661133b-f01d-4fe3-a057-130dfe2fae3c
+tco_kill_process
+
+
+2024-05-16 08:24:51,399 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: tco_kill_process
+**************************************************************
+ - STEP 3: S87a80ebb00f1497f85cd370223b66663 (1/7) - (3/37)
+ - [1] CloseAll
+
+
+2024-05-16 08:24:51,424 [T5-ScriptEngine] DEBUG UIAHelper
+CloseAll: excel.exe
+
+2024-05-16 08:24:52,441 [T5-ScriptEngine] INFO  JobRunner
+[PASS] TASK: tco_kill_process
+
+2024-05-16 08:24:52,447 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - tco_kill_process
+##############################################################
+a661133b-f01d-4fe3-a057-130dfe2fae3c
+tco_kill_process
+
+
+2024-05-16 08:24:52,467 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T1_before_Task
+**************************************************************
+ - STEP 4: Sbead5a5230b444ceb6bf2294c359c68e (2/8) - (4/37)
+ - [2] Block
+
+
+2024-05-16 08:24:52,483 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 5: Sf8b9ecbc42f14fcb88c646423f5b09b0 (3/8) - (5/37)
+ - [3] ExecuteScript
+
+
+2024-05-16 08:24:52,498 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 6: S8975f1f04dc1428db16185565f43821f (4/8) - (6/37)
+ - [4] RunTask
+
+
+2024-05-16 08:24:52,505 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - tco_config
+##############################################################
+02db42fa-f0c2-4aab-8e19-952fea6305c3
+tco_config
+
+
+2024-05-16 08:24:52,514 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: tco_config
+**************************************************************
+ - STEP 7: S45bab63c4786483698a629950d8440a0 (3/10) - (7/37)
+ - [3] IfThen
+
+
+2024-05-16 08:24:52,530 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 8: Sc972bbc7e1a2424e90fdfec2fd3a95e9 (4/10) - (8/37)
+ - [4] OpenExcel
+
+
+2024-05-16 08:24:56,140 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 9: S35e65cc4f0c040719be071d6a0a6338f (5/10) - (9/37)
+ - [5] ExecuteMacro
+
+
+2024-05-16 08:24:57,035 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 10: S01120c5dd0f34d6f923b5180596a0620 (6/10) - (10/37)
+ - [6] CloseExcel
+
+
+2024-05-16 08:24:57,052 [T5-ScriptEngine] DEBUG ExcelBase
+DisposeExcel
+
+2024-05-16 08:24:58,285 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 11: S902ba0407b5b4a8784a25eacbd6ce2f6 (7/10) - (11/37)
+ - [7] End-IfThen
+
+
+2024-05-16 08:24:58,300 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 12: Sfd50655a7aeb4aa49af6ac3ab6947269 (8/10) - (12/37)
+ - [8] ExecuteScript
+
+
+2024-05-16 08:24:58,330 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 13: Se4310e79f3fd4dfc91c5efb4f6b2c2eb (9/10) - (13/37)
+ - [9] GetSpecialFolder
+
+
+2024-05-16 08:24:58,345 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 14: Sd231ebaf79ba48bd900d24535d9e654e (10/10) - (14/37)
+ - [10] ExecuteScript
+
+
+2024-05-16 08:24:58,349 [T5-ScriptEngine] INFO  JobRunner
+[PASS] TASK: tco_config
+
+2024-05-16 08:24:58,350 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - tco_config
+##############################################################
+02db42fa-f0c2-4aab-8e19-952fea6305c3
+tco_config
+
+
+2024-05-16 08:24:58,360 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T1_before_Task
+**************************************************************
+ - STEP 15: S8498a872428249a5a6fd4ce4d675f950 (5/8) - (15/37)
+ - [5] ExecuteScript
+
+
+2024-05-16 08:24:58,376 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 16: Sd97ace96c2a24b0490f658bdb8348627 (6/8) - (16/37)
+ - [6] ExecuteScript
+
+
+2024-05-16 08:24:58,392 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 17: Sb0b951054b4a434dbabaf2eadcd2ece0 (8/8) - (17/37)
+ - [8] End-Block
+
+
+2024-05-16 08:24:58,392 [T5-ScriptEngine] INFO  JobRunner
+[PASS] TASK: T1_before_Task
+
+2024-05-16 08:24:58,395 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T1_before_Task
+##############################################################
+2537983c-d928-4592-8529-c1fd941c700d
+T1_before_Task
+
+
+2024-05-16 08:24:58,408 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 18: Sed2485d6ec024ac094e4d43fae3c3125 (2/3) - (18/37)
+ - [2] RunTask
+
+
+2024-05-16 08:24:58,409 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T_Copy_File_From_Shared_Folder
+##############################################################
+9aae0956-ad2f-4a09-9ca0-ce08f267c52a
+T_Copy_File_From_Shared_Folder
+
+
+2024-05-16 08:24:58,424 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_Copy_File_From_Shared_Folder
+**************************************************************
+ - STEP 19: S2eadf86603b34054a812b8c3aed480ff (1/5) - (19/37)
+ - [1] IsFileExist
+
+
+2024-05-16 08:24:58,440 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 20: Sb217df47d90a4513b8502bc0aef74a32 (2/5) - (20/37)
+ - [2] IfThen
+
+
+2024-05-16 08:24:58,456 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 21: S61743774f90d4914adccdfa07bd1022d (4/5) - (22/37)
+ - [4] End-IfThen
+
+
+2024-05-16 08:24:58,471 [T5-ScriptEngine] INFO  JobRequest
+ - STEP 22: S9fdc55261d084e31b2de5df33fefc1cc (5/5) - (23/37)
+ - [5] CopyFile
+
+
+2024-05-16 08:25:18,548 [T5-ScriptEngine] INFO  JobRunner
+[PASS] TASK: T_Copy_File_From_Shared_Folder
+
+2024-05-16 08:25:18,548 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T_Copy_File_From_Shared_Folder
+##############################################################
+9aae0956-ad2f-4a09-9ca0-ce08f267c52a
+T_Copy_File_From_Shared_Folder
+
+
+2024-05-16 08:25:18,563 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 23: S623ab20c8c11496381cd30958eececd5 (3/3) - (24/37)
+ - [3] RunTask
+
+
+2024-05-16 08:25:18,575 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T_출하실적_Shipment_Performance
+##############################################################
+694f54f7-f344-4340-bc21-3a225db05942
+T_출하실적_Shipment_Performance
+
+
+2024-05-16 08:25:19,330 [T5-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_출하실적_Shipment_Performance
+**************************************************************
+ - STEP 24: S8e80227aefc7465f82ecf9c5b1fa6072 (1/19) - (25/37)
+ - [1] OpenExcel
+
+
+2024-05-16 08:25:25,419 [T10] INFO  JobService
+PauseJob
+
+2024-05-16 08:25:25,420 [T10] INFO  JobRunner
+Try Pause
+
+2024-05-16 08:25:25,420 [T10] INFO  JobRequest
+##############################################################
+### STATE: Paused
+##############################################################
+
+
+2024-05-16 08:25:25,420 [T10] INFO  JobRequest
+Last job life cycle state: Paused
+
+2024-05-16 08:25:25,439 [T8] DEBUG JobRequest
+Callback - State: Paused
+
+
+2024-05-16 08:25:30,890 [T10] INFO  JobService
+Stop Job
+
+2024-05-16 08:25:30,891 [T10] INFO  JobRunner
+Stop Job Runner - Cause: LocalUser / Message: stop by user
+
+2024-05-16 08:25:30,892 [T10] INFO  JobRequest
+##############################################################
+### STATE: Stopping
+##############################################################
+stop by user
+
+
+2024-05-16 08:25:30,906 [T8] DEBUG JobRequest
+Callback - State: Stopping
+stop by user
+
+2024-05-16 08:25:33,835 [T5-ScriptEngine] ERROR OpenExcel
+Thread was interrupted from a waiting state.
+
+2024-05-16 08:25:33,835 [T5-ScriptEngine] DEBUG ExcelBase
+DisposeExcel
+
+2024-05-16 08:25:36,406 [T5-ScriptEngine] DEBUG JobRunner
+RunTask Interrupted. TASK: T_출하실적_Shipment_Performance => Script execution interrupted by host
+
+2024-05-16 08:25:36,496 [T5-ScriptEngine] DEBUG JobRunner
+RunTask Interrupted. TASK: MyProcess => Thread was interrupted from a waiting state.
+
+2024-05-16 08:25:36,522 [T5-ScriptEngine] DEBUG JobManager
+Set Result State: Stopped
+
+2024-05-16 08:25:36,526 [T5-ScriptEngine] INFO  JobRunner
+Make report.
+
+2024-05-16 08:25:36,559 [T5-ScriptEngine] INFO  JobRunner
+Start to clean up resources.
+
+2024-05-16 08:25:36,560 [T29] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2024-05-16 08:25:36,560 [T5-ScriptEngine] DEBUG JobRunner
+OnProcessCompleted
+
+2024-05-16 08:25:36,561 [T5-ScriptEngine] INFO  JobRunner
+Start to clean up resources.
+
+2024-05-16 08:25:36,561 [T5-ScriptEngine] DEBUG JobRunner
+Remove all Process Stack: 2
+
+2024-05-16 08:25:36,562 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T_출하실적_Shipment_Performance
+##############################################################
+694f54f7-f344-4340-bc21-3a225db05942
+T_출하실적_Shipment_Performance
+
+
+2024-05-16 08:25:36,562 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - MyProcess
+##############################################################
+9d750e41-5f7b-453c-8d62-6ffc591cde8f
+MyProcess
+
+
+2024-05-16 08:25:36,563 [T5-ScriptEngine] DEBUG JobRunner
+Remove all libraries
+
+2024-05-16 08:25:36,574 [T5-ScriptEngine] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2024-05-16 08:25:36,576 [T5-ScriptEngine] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2024-05-16 08:25:36,578 [T5-ScriptEngine] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2024-05-16 08:25:36,578 [T5-ScriptEngine] INFO  JobRunner
+All Resources Clear
+
+2024-05-16 08:25:36,580 [T5-ScriptEngine] DEBUG JobRunner
+OnCompleted
+
+2024-05-16 08:25:36,580 [T5-ScriptEngine] DEBUG JobRunner
+SendJobResult: Stopped
+
+2024-05-16 08:25:36,580 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Stopped
+##############################################################
+Process: MyProcess
+Task: T_출하실적_Shipment_Performance
+Step: OpenExcel (1/19)
+
+Stopped by User
+
+
+2024-05-16 08:25:36,580 [T5-ScriptEngine] INFO  JobRequest
+Last job life cycle state: Stopped
+
+2024-05-16 08:25:36,580 [T5-ScriptEngine] INFO  JobRequest
+Update skipped current step informations.
+
+2024-05-16 08:25:36,586 [T5-ScriptEngine] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2024-05-16 08:25:36,591 [T8] DEBUG JobRequest
+Callback - State: Stopped
+Process: MyProcess
+Task: T_출하실적_Shipment_Performance
+Step: OpenExcel (1/19)
+
+Stopped by User
+
+2024-05-16 08:25:36,592 [T8] INFO  JobRequest
+Callback - EngineClosed
+
+2024-05-16 08:25:36,594 [T8] INFO  JobService
+Disconnect agent service
+

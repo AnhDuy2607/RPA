@@ -1,0 +1,153 @@
+<Process id="a661133b-f01d-4fe3-a057-130dfe2fae3c" type="task" workType="foreground" name="tco_kill_process" version="1.0" designerVersion="3.1.124.00426" readonly="false" isValid="true" DesignedBy="Designer" StepCount="7" Orientation="horizontal">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Home64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="3840x1080" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="6" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2021-10-07 14:56:17" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="yjchoi@bsgone.com" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2024-05-15 14:18:04" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables />
+  <Steps>
+    <Step id="S87a80ebb00f1497f85cd370223b66663" ver="311240327" createVer="210208001" type="Win" name="CloseAll" dpName="CloseAll" dpValue="excel.exe" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="acf93446-5140-4ca1-8b3d-2f12e3ac1d05" type="Win">
+        <Property type="Win" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Kill Excel" />
+        <Property type="Win" key="Application_ProcessName" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'excel.exe'" />
+        <Property type="Win" key="Options_Force" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[StepPlayer.Run('Win.CloseAll', this.closeall_info_1);]]></Script>
+    </Step>
+    <Step id="S0e3f44eabca2488b90995211713cf5bb" ver="311240327" createVer="210208001" type="Win" name="CloseAll" dpName="CloseAll" dpValue="notepad.exe" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="False" mainSet="0">
+      <Properties id="acf93446-5140-4ca1-8b3d-2f12e3ac1d05" type="Win">
+        <Property type="Win" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Kill Notepad" />
+        <Property type="Win" key="Application_ProcessName" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'notepad.exe'" />
+        <Property type="Win" key="Options_Force" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[StepPlayer.Run('Win.CloseAll', this.closeall_info_2);]]></Script>
+    </Step>
+    <Step id="S2b047a7793654946bfdbcf556db43afb" ver="311240327" createVer="210208001" type="Win" name="CloseAll" dpName="CloseAll" dpValue="IExplore.exe" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="False" mainSet="0">
+      <Properties id="acf93446-5140-4ca1-8b3d-2f12e3ac1d05" type="Win">
+        <Property type="Win" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Kill IExplore" />
+        <Property type="Win" key="Application_ProcessName" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'IExplore.exe'" />
+        <Property type="Win" key="Options_Force" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[StepPlayer.Run('Win.CloseAll', this.closeall_info_3);]]></Script>
+    </Step>
+    <Step id="S97fd7e0ed2fd433c8c3bace9c4cf74bd" ver="311240327" createVer="210208001" type="Win" name="CloseAll" dpName="CloseAll" dpValue="chrome.exe" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="False" mainSet="0">
+      <Properties id="acf93446-5140-4ca1-8b3d-2f12e3ac1d05" type="Win">
+        <Property type="Win" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Kill chrome" />
+        <Property type="Win" key="Application_ProcessName" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'chrome.exe'" />
+        <Property type="Win" key="Options_Force" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[StepPlayer.Run('Win.CloseAll', this.closeall_info_4);]]></Script>
+    </Step>
+    <Step id="Sdbaa0604bcf5495ab3c815a7e75678a5" ver="311240327" createVer="210208001" type="Win" name="CloseAll" dpName="CloseAll" dpValue="IEDriverServer.exe" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="False" mainSet="0">
+      <Properties id="acf93446-5140-4ca1-8b3d-2f12e3ac1d05" type="Win">
+        <Property type="Win" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Kill IEDriverServer" />
+        <Property type="Win" key="Application_ProcessName" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'IEDriverServer.exe'" />
+        <Property type="Win" key="Options_Force" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[StepPlayer.Run('Win.CloseAll', this.closeall_info_5);]]></Script>
+    </Step>
+    <Step id="Sb192586284164892bfef5dcd269bcfcf" ver="311240327" createVer="210208001" type="Win" name="CloseAll" dpName="CloseAll" dpValue="chromedriver.exe" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="False" mainSet="0">
+      <Properties id="acf93446-5140-4ca1-8b3d-2f12e3ac1d05" type="Win">
+        <Property type="Win" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Kill chromedriver" />
+        <Property type="Win" key="Application_ProcessName" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'chromedriver.exe'" />
+        <Property type="Win" key="Options_Force" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[StepPlayer.Run('Win.CloseAll', this.closeall_info_6);]]></Script>
+    </Step>
+    <Step id="Sb0a33b3f278040e8bfe6239427451cff" ver="311240327" createVer="210208001" type="Win" name="CloseAll" dpName="CloseAll" dpValue="msedge.exe" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="False" mainSet="0">
+      <Properties id="acf93446-5140-4ca1-8b3d-2f12e3ac1d05" type="Win">
+        <Property type="Win" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Win" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="Kill msedge.exe" />
+        <Property type="Win" key="Application_ProcessName" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="'msedge.exe'" />
+        <Property type="Win" key="Options_Force" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="True" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[StepPlayer.Run('Win.CloseAll', this.closeall_info_7);]]></Script>
+    </Step>
+  </Steps>
+  <JScript><![CDATA[function tco_kill_process() {
+
+    this.RPAGOTOENABLE = false;
+    this.GotoStepRetryCntMap = {};
+    this.GotoBlockMap = {};
+    this.GotoReverseBlockMap = {};
+    this.GotoStepBlockTypeMap = {};
+
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('S87a80ebb00f1497f85cd370223b66663', '[1] CloseAll');
+        StepPlayer.Run('Win.CloseAll', this.closeall_info_1);
+
+        ////------------------------------------------------
+        //STEP('S0e3f44eabca2488b90995211713cf5bb', '[2] CloseAll');
+        //StepPlayer.Run('Win.CloseAll', this.closeall_info_2);
+
+        ////------------------------------------------------
+        //STEP('S2b047a7793654946bfdbcf556db43afb', '[3] CloseAll');
+        //StepPlayer.Run('Win.CloseAll', this.closeall_info_3);
+
+        ////------------------------------------------------
+        //STEP('S97fd7e0ed2fd433c8c3bace9c4cf74bd', '[4] CloseAll');
+        //StepPlayer.Run('Win.CloseAll', this.closeall_info_4);
+
+        ////------------------------------------------------
+        //STEP('Sdbaa0604bcf5495ab3c815a7e75678a5', '[5] CloseAll');
+        //StepPlayer.Run('Win.CloseAll', this.closeall_info_5);
+
+        ////------------------------------------------------
+        //STEP('Sb192586284164892bfef5dcd269bcfcf', '[6] CloseAll');
+        //StepPlayer.Run('Win.CloseAll', this.closeall_info_6);
+
+        ////------------------------------------------------
+        //STEP('Sb0a33b3f278040e8bfe6239427451cff', '[7] CloseAll');
+        //StepPlayer.Run('Win.CloseAll', this.closeall_info_7);
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="S87a80ebb00f1497f85cd370223b66663" group_name="cbc93a81-0a47-496d-9381-a17cf6d8b72f_Kill Process" folded="False" color="" />
+      <StepNode step_id="S0e3f44eabca2488b90995211713cf5bb" group_name="cbc93a81-0a47-496d-9381-a17cf6d8b72f_Kill Process" folded="False" color="" />
+      <StepNode step_id="S2b047a7793654946bfdbcf556db43afb" group_name="cbc93a81-0a47-496d-9381-a17cf6d8b72f_Kill Process" folded="False" color="" />
+      <StepNode step_id="S97fd7e0ed2fd433c8c3bace9c4cf74bd" group_name="cbc93a81-0a47-496d-9381-a17cf6d8b72f_Kill Process" folded="False" color="" />
+      <StepNode step_id="Sdbaa0604bcf5495ab3c815a7e75678a5" group_name="cbc93a81-0a47-496d-9381-a17cf6d8b72f_Kill Process" folded="False" color="" />
+      <StepNode step_id="Sb192586284164892bfef5dcd269bcfcf" group_name="cbc93a81-0a47-496d-9381-a17cf6d8b72f_Kill Process" folded="False" color="" />
+      <StepNode step_id="Sb0a33b3f278040e8bfe6239427451cff" group_name="cbc93a81-0a47-496d-9381-a17cf6d8b72f_Kill Process" folded="False" color="" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>0jW+EUEOCBsUfzMomFVRk1DW7NM=</DigestValue></Reference></SignedInfo><SignatureValue>n42GwcA9GhgY/ZqcZC2R9YKoA2ulCSVSJY2hC2ycDCBEoetMLwrSj2P2fbfpa1lsdtoe0H5/h/L2oFFEY8rZDb4zo8sUjJdVU9x/tszsboc0IFcbhGOZ1zUEFpzSYJUCNBo8933Az0pmrmUfaSsin4dBtlT6DT/uJHszhwoIAOYgJfxlaxNI8AQsvJvVdPgnYPUTK1hCuuOG2yv+hOLlox1uPxqKwsd7W7sNWXxIG0KJAodHVuSVxhUfhz+30T4tHqZQyjozHx3aKZZgoPA9oHPSAVgJTDlitBMXUDhshGQ1CjHnh/x1S2uxQUNqhdgx9PlDcX5s84Sdmkfe5iAhcQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-6PB8F, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

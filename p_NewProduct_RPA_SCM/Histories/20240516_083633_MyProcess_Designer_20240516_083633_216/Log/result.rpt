@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="9d750e41-5f7b-453c-8d62-6ffc591cde8f" name="MyProcess" result="Stop" detail="Process: MyProcess&#xA;&#xA;Process: MyProcess&#xA;Task: T_출하실적_Shipment_Performance&#xA;Step: Click (2/19)&#xA;Target object does not exist, or can not be identified with current properties.&#xA;&#xA;A total of 1078 candidate objects were reviewed on 1 target app screens by attempting 16 searches for 10 seconds, but no target objects were found.&#xA;&#xA;The current properties are as follows.&#xA;&#xA;Application: EXCEL&#xA;App Object Type: Window&#xA;Target Type: Button&#xA;Target Name: 파일 탭&#xA;Target Path: Window|XLMAIN||Win32|False||3|tempfile.xlsx - Excel/Pane|EXCEL2||Win32|False||2|/ToolBar|MsoCommandBar||Win32|False||0|/Pane|MsoWorkPane||Win32|False||0|Ribbon/Pane|NUIPane||Win32|False||0|/Pane|NetUIHWNDElement||Win32|False||0|/Pane|NetUInetpane||Win32|False||0|Ribbon/Button|NetUIRibbonTab|FileTabButton|Win32|False||7|파일 탭&#xA;&#xA;-- Recent Warning Messages --&#xA;Process: MyProcess&#xA;Task: T_출하실적_Shipment_Performance&#xA;Step: Click (2/19)&#xA;&#xA;Error: Target object does not exist, or can not be identified with current properties.&#xA;&#xA;A total of 1078 candidate objects were reviewed on 1 target app screens by attempting 16 searches for 10 seconds, but no target objects were found.&#xA;&#xA;The current properties are as follows.&#xA;&#xA;Application: EXCEL&#xA;App Object Type: Window&#xA;Target Type: Button&#xA;Target Name: 파일 탭&#xA;Target Path: Window|XLMAIN||Win32|False||3|tempfile.xlsx - Excel/Pane|EXCEL2||Win32|False||2|/ToolBar|MsoCommandBar||Win32|False||0|/Pane|MsoWorkPane||Win32|False||0|Ribbon/Pane|NUIPane||Win32|False||0|/Pane|NetUIHWNDElement||Win32|False||0|/Pane|NetUInetpane||Win32|False||0|Ribbon/Button|NetUIRibbonTab|FileTabButton|Win32|False||7|파일 탭" start="2024-05-16T01:36:35.285" end="2024-05-16T01:37:31.472" jobId="Designer_20240516_083633_216">
+  <Step id="S23aa70b068ac4b25adf3c7625fdd18ac" taskName="MyProcess" type="Flow" name="RunTask" displayName="RunTask ('T1_before_Task')" callDepth="1" depth="1" num="1" result="Pass" start="2024-05-16T01:36:35.333" end="2024-05-16T01:36:35.396" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="T1_before_Task" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S64ba49f48afa47b092176e86cbdd4f53" taskName="T1_before_Task" type="Flow" name="RunTask" displayName="RunTask ('tco_kill_process')" callDepth="2" depth="1" num="1" result="Pass" start="2024-05-16T01:36:35.403" end="2024-05-16T01:36:35.404" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="tco_kill_process" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S87a80ebb00f1497f85cd370223b66663" taskName="tco_kill_process" type="Win" name="CloseAll" displayName="CloseAll" callDepth="3" depth="1" num="1" result="Pass" start="2024-05-16T01:36:35.419" end="2024-05-16T01:36:36.460" displayTime="1s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="Kill Excel" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'excel.exe'" runtimeType="String" key="Application_ProcessName" displayKey="Application" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="Options_Force" displayKey="Force" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sdb56c7cfbbf14e968260a41f47b03a64" taskName="tco_kill_process" type="Flow" name="InternalData" displayName="End-RunTask ('tco_kill_process') / Return To 'T1_before_Task'" callDepth="3" depth="1" num="" result="Internal" start="2024-05-16T01:36:36.464" end="2024-05-16T01:36:36.464" displayTime="0s" />
+  <Step id="Sbead5a5230b444ceb6bf2294c359c68e" taskName="T1_before_Task" type="Flow" name="Block" displayName="Block" callDepth="2" depth="1" num="2" result="Pass" start="2024-05-16T01:36:36.474" end="2024-05-16T01:36:36.476" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="전처리" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sf8b9ecbc42f14fcb88c646423f5b09b0" taskName="T1_before_Task" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="2" depth="2" num="3" result="Pass" start="2024-05-16T01:36:36.489" end="2024-05-16T01:36:36.490" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="이어달리기 용도로 사용&#xD;&#xA;n.co.skip_excel=false로 되어 있어야 Default" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;Too Long&gt; //-------------------------------------&#xD;&#xA;//TASK : tall_config 호출전에 &#xD;&#xA;//       n변수에 노드변수를 설정해야 함&#xD;&#xA;//d ... 403 more" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S8975f1f04dc1428db16185565f43821f" taskName="T1_before_Task" type="Flow" name="RunTask" displayName="RunTask ('tco_config')" callDepth="2" depth="2" num="4" result="Pass" start="2024-05-16T01:36:36.504" end="2024-05-16T01:36:36.511" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="tco_config" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S45bab63c4786483698a629950d8440a0" taskName="tco_config" type="Flow" name="DecisionThen" displayName="IfThen" callDepth="3" depth="1" num="3" result="Pass" start="2024-05-16T01:36:36.520" end="2024-05-16T01:36:36.521" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="typeof(n.co.skip_excel) == &quot;undefined&quot; || n.co.skip_excel == false" runtimeType="String" key="Conditions_Expression" displayKey="IfThen Condition" visible="false" required="true" />
+      <Property value="true" runtimeType="Boolean" key="Conditions_CombineCondition" displayKey="Combine Condition" visible="false" required="false" />
+      <Property value="true" runtimeType="Boolean" key="Conditions_Expression1" displayKey="Condition" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="Conditions_AddCondition" displayKey="Add Condition" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sc972bbc7e1a2424e90fdfec2fd3a95e9" taskName="tco_config" type="Excel" name="OpenExcel" displayName="OpenExcel" callDepth="3" depth="2" num="4" result="Pass" start="2024-05-16T01:36:36.536" end="2024-05-16T01:36:39.920" displayTime="3.4s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="h.excel.macro : &lt;undefined&gt;" runtimeType="Undefined" key="Output_OutputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'C:\\BrityLockNLock\\1. Config\\macro.xlsm'" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="File_Invisible" displayKey="Invisible" visible="true" required="false" />
+      <Property value="true" runtimeType="Boolean" key="File_ReadOnly" displayKey="ReadOnly" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="File_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="File_ExecuteShell" displayKey="Execute Shell" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="File_Timeout" displayKey="Timeout" visible="false" required="true" />
+      <Property value="false" runtimeType="Boolean" key="File_UsePassword" displayKey="UsePassword" visible="true" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_OpenPassword" displayKey="OpenPassword" visible="false" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_WritePassword" displayKey="WritePassword" visible="false" required="false" />
+      <Property value="Comma(,)" runtimeType="String" key="File_TextDelimiter" displayKey="Text Delimiter" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S35e65cc4f0c040719be071d6a0a6338f" taskName="tco_config" type="Excel" name="ExecuteMacro" displayName="ExecuteMacro" callDepth="3" depth="2" num="5" result="Pass" start="2024-05-16T01:36:39.924" end="2024-05-16T01:36:40.702" displayTime="0.8s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Workbook" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'init'" runtimeType="String" key="File_MacroName" displayKey="MacroName" visible="true" required="true" />
+      <Property value="'config{`p1{`m1'" runtimeType="String" key="File_Params" displayKey="Parameters" visible="true" required="false" />
+      <Property value="'Sheet1'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S01120c5dd0f34d6f923b5180596a0620" taskName="tco_config" type="Excel" name="CloseExcel" displayName="CloseExcel" callDepth="3" depth="2" num="6" result="Pass" start="2024-05-16T01:36:40.708" end="2024-05-16T01:36:42.042" displayTime="1.3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Workbook" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="File_Force" displayKey="Force" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S902ba0407b5b4a8784a25eacbd6ce2f6" taskName="tco_config" type="Flow" name="EndDecisionThen" displayName="End-IfThen" callDepth="3" depth="2" num="7" result="Pass" start="2024-05-16T01:36:42.058" end="2024-05-16T01:36:42.059" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sfd50655a7aeb4aa49af6ac3ab6947269" taskName="tco_config" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="3" depth="1" num="8" result="Pass" start="2024-05-16T01:36:42.074" end="2024-05-16T01:36:42.093" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="--Ignore--" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;Too Long&gt; Script.rpa.load();&#xD;&#xA;&#xD;&#xA;Script.rpa.log('= Script.rpa.load()');&#xD;&#xA;&#xD;&#xA;Script.rpa.log (Script.rpa.members(d ... 5 more" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Se4310e79f3fd4dfc91c5efb4f6b2c2eb" taskName="tco_config" type="Desktop" name="GetSpecialFolder" displayName="GetSpecialFolder" callDepth="3" depth="1" num="9" result="Pass" start="2024-05-16T01:36:42.104" end="2024-05-16T01:36:42.107" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="C:\Users\jihye\Documents\" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="MyDocuments" runtimeType="String" key="Command_FolderType" displayKey="FolderType" visible="true" required="true" />
+      <Property value="d.path.down_origin2 : &lt;undefined&gt;" runtimeType="Undefined" key="Command_Output" displayKey="Output" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sd231ebaf79ba48bd900d24535d9e654e" taskName="tco_config" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="3" depth="1" num="10" result="Pass" start="2024-05-16T01:36:42.120" end="2024-05-16T01:36:42.121" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="&lt;Too Long&gt; // 다운로드&#xD;&#xA;d.path.down_origin2 = d.path.down_origin2.slice(0,-10);&#xD;&#xA;d.path.down_origin2 = d.path.down_ ... 169 more" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sd112ef6fd01a4f44a84ccd0b64fcf1b5" taskName="tco_config" type="Flow" name="InternalData" displayName="End-RunTask ('tco_config') / Return To 'T1_before_Task'" callDepth="3" depth="1" num="" result="Internal" start="2024-05-16T01:36:42.121" end="2024-05-16T01:36:42.121" displayTime="0s" />
+  <Step id="S8498a872428249a5a6fd4ce4d675f950" taskName="T1_before_Task" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="2" depth="2" num="5" result="Pass" start="2024-05-16T01:36:42.136" end="2024-05-16T01:36:42.137" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="이어달리기 용도로 사용" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Script.rpa.saveVariable();&#xD;&#xA;//Script.rpa.loadVariable();" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sd97ace96c2a24b0490f658bdb8348627" taskName="T1_before_Task" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="2" depth="2" num="6" result="Pass" start="2024-05-16T01:36:42.152" end="2024-05-16T01:36:42.165" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;Too Long&gt; /* - LOG_CREATE - &#xD;&#xA;인수0 : n.co_logc.create_fld        //LOG || DUMMY&#xD;&#xA;---------------------*/&#xD;&#xA;&#xD;&#xA;n.c ... 88 more" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sb0b951054b4a434dbabaf2eadcd2ece0" taskName="T1_before_Task" type="Flow" name="EndBlock" displayName="End-Block" callDepth="2" depth="2" num="8" result="Pass" start="2024-05-16T01:36:42.167" end="2024-05-16T01:36:42.168" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="전처리" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4a9d5dd433b54af2a06c1ce2c2b7b3db" taskName="T1_before_Task" type="Flow" name="InternalData" displayName="End-RunTask ('T1_before_Task') / Return To 'MyProcess'" callDepth="2" depth="2" num="" result="Internal" start="2024-05-16T01:36:42.169" end="2024-05-16T01:36:42.169" displayTime="0s" />
+  <Step id="Sed2485d6ec024ac094e4d43fae3c3125" taskName="MyProcess" type="Flow" name="RunTask" displayName="RunTask ('T_Copy_File_From_Shared_Folder')" callDepth="1" depth="1" num="2" result="Pass" start="2024-05-16T01:36:42.183" end="2024-05-16T01:36:42.185" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="T_Copy_File_From_Shared_Folder" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S2eadf86603b34054a812b8c3aed480ff" taskName="T_Copy_File_From_Shared_Folder" type="Desktop" name="IsFileExist" displayName="IsFileExist" callDepth="2" depth="1" num="1" result="Pass" start="2024-05-16T01:36:42.199" end="2024-05-16T01:36:42.204" displayTime="0s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'C:\\\\BrityLockNLock\\\\3. Download\\\\P12_신상품_판매계획_작성_자동화\\신상품 평가지표_RPA_SCM.xlsx'" runtimeType="String" key="Command_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="RESULT : true" runtimeType="Boolean" key="Command_Output" displayKey="Output" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb217df47d90a4513b8502bc0aef74a32" taskName="T_Copy_File_From_Shared_Folder" type="Flow" name="DecisionThen" displayName="IfThen" callDepth="2" depth="1" num="2" result="Pass" start="2024-05-16T01:36:42.215" end="2024-05-16T01:36:42.216" displayTime="0s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Boolean" value="true" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="!RESULT" runtimeType="String" key="Conditions_Expression" displayKey="IfThen Condition" visible="false" required="true" />
+      <Property value="true" runtimeType="Boolean" key="Conditions_CombineCondition" displayKey="Combine Condition" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Conditions_Expression1" displayKey="Condition" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="Conditions_AddCondition" displayKey="Add Condition" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S61743774f90d4914adccdfa07bd1022d" taskName="T_Copy_File_From_Shared_Folder" type="Flow" name="EndDecisionThen" displayName="End-IfThen" callDepth="2" depth="2" num="4" result="Pass" start="2024-05-16T01:36:42.230" end="2024-05-16T01:36:42.230" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S9fdc55261d084e31b2de5df33fefc1cc" taskName="T_Copy_File_From_Shared_Folder" type="Desktop" name="CopyFile" displayName="CopyFile" callDepth="2" depth="1" num="5" result="Pass" start="2024-05-16T01:36:42.246" end="2024-05-16T01:36:50.163" displayTime="7.9s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'\\\\101.1.1.240\\rpa 운영\\SCM팀\\P12_신상품_판매계획_작성_자동화\\신상품 평가지표_RPA_SCM.xlsx'" runtimeType="String" key="Command_SrcFilePath" displayKey="SrcFilePath" visible="true" required="true" />
+      <Property value="'C:\\\\BrityLockNLock\\\\3. Download\\\\P12_신상품_판매계획_작성_자동화\\신상품 평가지표_RPA_SCM.xlsx'" runtimeType="String" key="Command_DestFilePath" displayKey="DestFilePath" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="Command_Overwrite" displayKey="Overwrite" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S3860da9bfe1640f5aab2a7c043e9837f" taskName="T_Copy_File_From_Shared_Folder" type="Flow" name="InternalData" displayName="End-RunTask ('T_Copy_File_From_Shared_Folder') / Return To 'MyProcess'" callDepth="2" depth="1" num="" result="Internal" start="2024-05-16T01:36:50.164" end="2024-05-16T01:36:50.164" displayTime="0s" />
+  <Step id="S623ab20c8c11496381cd30958eececd5" taskName="MyProcess" type="Flow" name="RunTask" displayName="RunTask ('T_출하실적_Shipment_Performance')" callDepth="1" depth="1" num="3" result="Pass" start="2024-05-16T01:36:50.179" end="2024-05-16T01:36:50.194" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="T_출하실적_Shipment_Performance" runtimeType="String" key="Conditions_TaskName" displayKey="Task Name" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S8e80227aefc7465f82ecf9c5b1fa6072" taskName="T_출하실적_Shipment_Performance" type="Excel" name="OpenExcel" displayName="OpenExcel" callDepth="2" depth="1" num="1" result="Pass" start="2024-05-16T01:36:50.210" end="2024-05-16T01:37:05.804" displayTime="15.6s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Boolean" value="true" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT : Workbook" runtimeType="Any" key="Output_OutputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'C:\\\\BrityLockNLock\\\\3. Download\\\\P12_신상품_판매계획_작성_자동화\\신상품 평가지표_RPA_SCM.xlsx'" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="false" runtimeType="Boolean" key="File_Invisible" displayKey="Invisible" visible="true" required="false" />
+      <Property value="true" runtimeType="Boolean" key="File_ReadOnly" displayKey="ReadOnly" visible="true" required="false" />
+      <Property value="true" runtimeType="Boolean" key="File_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="File_ExecuteShell" displayKey="Execute Shell" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="File_Timeout" displayKey="Timeout" visible="false" required="true" />
+      <Property value="false" runtimeType="Boolean" key="File_UsePassword" displayKey="UsePassword" visible="true" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_OpenPassword" displayKey="OpenPassword" visible="false" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_WritePassword" displayKey="WritePassword" visible="false" required="false" />
+      <Property value="Comma(,)" runtimeType="String" key="File_TextDelimiter" displayKey="Text Delimiter" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sb0638a4267f24a8e9116ea30204f77c4" taskName="T_출하실적_Shipment_Performance" type="Win" name="Click" displayName="Click" callDepth="2" depth="1" num="2" result="Fail" start="2024-05-16T01:37:05.817" end="2024-05-16T01:37:31.436" displayTime="25.6s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="10" runtimeType="Integer" key="Target_Timeout" displayKey="Timeout" visible="true" required="true" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Target_TargetNo" displayKey="Index (starts from number 1)" visible="true" required="false" />
+      <Property value="true" runtimeType="Boolean" key="Target_UseName" displayKey="Check Name" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseValue" displayKey="Check Value" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseLegacyName" displayKey="Check Legacy Name" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseLegacyValue" displayKey="Check Legacy Value" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseLegacyDesc" displayKey="Check Legacy Description" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseLegacyHelp" displayKey="Check Legacy Help" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseBounds" displayKey="Check Size" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseAppTitle" displayKey="Check Title" visible="false" required="false" />
+      <Property value="true" runtimeType="Boolean" key="Target_UseSetFocus" displayKey="Focus Before" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseClickBefore" displayKey="Click Before" visible="false" required="false" />
+      <Property value="true" runtimeType="Boolean" key="Target_DrawBounds" displayKey="Draw Bounds" visible="true" required="false" />
+      <Property value="true" runtimeType="Boolean" key="Target_UseObjectPath" displayKey="Check Path" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseRelativePath" displayKey="Check Relative Path" visible="false" required="false" />
+      <Property value="&lt;Too Long&gt; 'Window|XLMAIN||Win32|False||3|tempfile.xlsx - Excel/Pane|EXCEL2||Win32|False||2|/ToolBar|MsoCommand ... 227 more" runtimeType="String" key="Target_ObjectPathEx" displayKey="Object Path" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="Target_RelativePath" displayKey="Relative Path" visible="true" required="false" />
+      <Property value="'36, 8'" runtimeType="String" key="Mouse_OffsetPoint" displayKey="Offset Point" visible="false" required="false" />
+      <Property value="'36, 8'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="true" required="false" />
+      <Property value="LeftTop" runtimeType="String" key="Mouse_OriginPoint" displayKey="Relative Origin" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="Search Around" visible="false" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="Use Image Match" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="Image Index Method" visible="true" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="Select Image Index" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Target_SearchBounds" displayKey="Search Bounds" visible="false" required="false" />
+      <Property value="true" runtimeType="Boolean" key="Target_IgnoreOffScreen" displayKey="Ignore off-screen objects" visible="true" required="false" />
+      <Property value="41056" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="EXCEL" runtimeType="String" key="Application_ProcessName" displayKey="Application" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="Remote App Name" visible="false" required="false" />
+      <Property value="'tempfile.xlsx - Excel'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="XLMAIN" runtimeType="String" key="Application_ClassName" displayKey="App Class Name" visible="false" required="false" />
+      <Property value="Window" runtimeType="String" key="Application_ClassType" displayKey="App Object Type" visible="false" required="false" />
+      <Property value="8391846" runtimeType="Integer" key="Application_WindowHandle" displayKey="WindowHandle" visible="false" required="false" />
+      <Property value="1912,44,1936,1048" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Invoke" runtimeType="String" key="Target_SupportedPatterns" displayKey="Supported Patterns" visible="true" required="false" />
+      <Property value="FileTabButton" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="Win32" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="42.28644348.4.841701968.409" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="NetUIRibbonTab" runtimeType="String" key="Target_ClassName" displayKey="Class Name" visible="false" required="false" />
+      <Property value="Button" runtimeType="String" key="Target_ClassType" displayKey="Type" visible="true" required="true" />
+      <Property value="'파일 탭'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="&lt;Too Long&gt; 'Window|XLMAIN||Win32/Pane|EXCEL2||Win32/ToolBar|MsoCommandBar||Win32/Pane|MsoWorkPane||Win32/Pane|N ... 110 more" runtimeType="String" key="Target_ObjectPath" displayKey="Object Path" visible="false" required="true" />
+      <Property value="12,56,54,30" runtimeType="Rect" key="Target_Bounds" displayKey="Size" visible="true" required="false" />
+      <Property value="1960,108" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="48,64" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'파일 탭'" runtimeType="String" key="Target_LegacyName" displayKey="Legacy Name" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_LegacyValue" displayKey="Legacy Value" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_LegacyDesc" displayKey="Legacy Description" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_LegacyHelp" displayKey="Legacy Help" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_IsReadOnly" displayKey="IsReadOnly" visible="false" required="false" />
+      <Property value="true" runtimeType="Boolean" key="Target_IsEditable" displayKey="IsEditable" visible="false" required="false" />
+      <Property value="30,15" runtimeType="Size" key="Target_SizeTolerance" displayKey="Size Tolerance" visible="false" required="false" />
+      <Property value="2024-05-15 17:11:09.429" runtimeType="String" key="Target_TimeStamp" displayKey="TimeStamp" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Mouse_UseInvoke" displayKey="Invoke/Click" visible="true" required="false" />
+      <Property value="Designer" runtimeType="String" key="Target_CapturedBy" displayKey="Captured By" visible="false" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="64,42,54,30" runtimeType="Rect" key="Target_ImageCompareBounds" displayKey="Image Comp. Bounds" visible="false" required="false" />
+      <Property value="'27, 15'" runtimeType="String" key="Target_PointOnImage" displayKey="Point on Image" visible="false" required="false" />
+    </Properties>
+    <SearchResult result="NoTarget" tryCount="16" appFilter="Single" appCount="1" searchMethod="Point" candidateCount="0" targetFilter="Name, Path" extraFilter="" err="Target object does not exist, or can not be identified with current properties.&#xA;&#xA;A total of 1078 candidate objects were reviewed on 1 target app screens by attempting 16 searches for 10 seconds, but no target objects were found.&#xA;&#xA;The current properties are as follows.&#xA;&#xA;Application: EXCEL&#xA;App Object Type: Window&#xA;Target Type: Button&#xA;Target Name: 파일 탭&#xA;Target Path: Window|XLMAIN||Win32|False||3|tempfile.xlsx - Excel/Pane|EXCEL2||Win32|False||2|/ToolBar|MsoCommandBar||Win32|False||0|/Pane|MsoWorkPane||Win32|False||0|Ribbon/Pane|NUIPane||Win32|False||0|/Pane|NetUIHWNDElement||Win32|False||0|/Pane|NetUInetpane||Win32|False||0|Ribbon/Button|NetUIRibbonTab|FileTabButton|Win32|False||7|파일 탭" />
+  </Step>
+  <Step id="S95f578dc9ca344958e9e6d4fd43e4c7c" taskName="T_출하실적_Shipment_Performance" type="Flow" name="InternalData" displayName="End-RunTask ('T_출하실적_Shipment_Performance') / Return To 'MyProcess'" callDepth="2" depth="1" num="" result="Internal" start="2024-05-16T01:37:31.455" end="2024-05-16T01:37:31.455" displayTime="0s" />
+  <JobInfo>
+    <Info name="Bot Version" value="3.1.124.00426" />
+    <Info name="Resolution" value="3840 x 1132" />
+    <Info name="Language" value="English (United States)" />
+    <Info name="BotID" value="DESIGNER-6PB8F" />
+  </JobInfo>
+</Result>

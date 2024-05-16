@@ -1,0 +1,857 @@
+﻿2024-05-15 17:22:02,792 [T1] INFO  EngineStarter
+BOT Engine Start - v3.1.124.00426 at 5/15/2024 5:22:02 PM
+EngineID: D_20240515_172202_183
+PID : 19772
+PPID: 15780
+Working Directory: C:\Users\PC\AppData\Roaming\Brity RPA Designer
+
+2024-05-15 17:22:02,809 [T1] INFO  EngineStarter
+System Language: en-US
+Resolution: 3840 x 1132
+
+2024-05-15 17:22:02,989 [T1] INFO  Config
+Initialize Config
+
+2024-05-15 17:22:03,011 [T1] DEBUG Config
+Config Loaded
+
+2024-05-15 17:22:03,012 [T1] DEBUG Config
+Backup config file.
+
+2024-05-15 17:22:03,019 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2024-05-15 17:22:03,022 [T1] INFO  Config
+Initialize Resource Config
+
+2024-05-15 17:22:03,044 [T1] DEBUG Config
+Refresh Language Information
+
+2024-05-15 17:22:03,094 [T1] INFO  Config
+All Config Initialized.
+
+2024-05-15 17:22:03,099 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2024-05-15 17:22:03,100 [T1] DEBUG KeyManager
+Load device unique id.
+
+2024-05-15 17:22:03,108 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2024-05-15 17:22:03,133 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2024-05-15 17:22:03,135 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2024-05-15 17:22:03,159 [T5] DEBUG JobService
+Connect to agent service
+
+2024-05-15 17:22:03,169 [T5] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2024-05-15 17:22:03,169 [T5] DEBUG JobService
+Open connection
+
+2024-05-15 17:22:03,176 [T5] DEBUG JobService
+Register engine to agent
+
+2024-05-15 17:22:03,180 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2024-05-15 17:22:03,184 [T5] DEBUG JobService
+Engine is connected to agent service.
+
+2024-05-15 17:22:03,184 [T5] DEBUG JobService
+Owner Process PID: 15780
+
+2024-05-15 17:22:03,189 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2024-05-15 17:22:03,192 [T5] INFO  JobService
+Start monitoring owner process is terminated.
+
+2024-05-15 17:22:03,196 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Chrome
+
+2024-05-15 17:22:03,354 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Desktop
+
+2024-05-15 17:22:03,484 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Excel
+
+2024-05-15 17:22:03,606 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Flow
+
+2024-05-15 17:22:03,688 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.IE
+
+2024-05-15 17:22:03,756 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ImageConverter
+
+2024-05-15 17:22:03,804 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ImageRecognition
+
+2024-05-15 17:22:03,945 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.MicrosoftOCR
+
+2024-05-15 17:22:03,991 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Net
+
+2024-05-15 17:22:04,059 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Orchestra
+
+2024-05-15 17:22:04,126 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ProcessFlow
+
+2024-05-15 17:22:04,189 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.SAP
+
+2024-05-15 17:22:04,247 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Web
+
+2024-05-15 17:22:04,329 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Win
+
+2024-05-15 17:22:04,441 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,3840,1132
+
+2024-05-15 17:22:04,463 [T1] DEBUG AddInLoader
+Load Assembly : BrityRPA.AddIn.NativeApp
+
+2024-05-15 17:22:04,551 [T1] DEBUG AddInLoader
+Load Assembly : BrityWorks.AddIn.Outlook
+
+2024-05-15 17:22:04,605 [T1] DEBUG AddInLoader
+Load Assembly : BrityWorks.AddIn.Pdf
+
+2024-05-15 17:22:04,673 [T1] DEBUG LibraryManager
+Load Library - Chrome
+
+2024-05-15 17:22:04,688 [T1] DEBUG LibraryManager
+Load Library - Desktop
+
+2024-05-15 17:22:04,703 [T1] DEBUG LibraryManager
+Load Library - Excel
+
+2024-05-15 17:22:04,719 [T1] DEBUG LibraryManager
+Load Library - Flow
+
+2024-05-15 17:22:04,735 [T1] DEBUG LibraryManager
+Load Library - IE
+
+2024-05-15 17:22:04,750 [T1] DEBUG LibraryManager
+Load Library - ImageConverter
+
+2024-05-15 17:22:04,766 [T1] DEBUG LibraryManager
+Load Library - ImageRecognition
+
+2024-05-15 17:22:04,781 [T1] DEBUG LibraryManager
+Load Library - MicrosoftOCR
+
+2024-05-15 17:22:04,797 [T1] DEBUG LibraryManager
+Load Library - NativeApp
+
+2024-05-15 17:22:04,812 [T1] DEBUG LibraryManager
+Load Library - Net
+
+2024-05-15 17:22:04,828 [T1] DEBUG LibraryManager
+Load Library - Orchestra
+
+2024-05-15 17:22:04,845 [T1] DEBUG LibraryManager
+Load Library - Outlook
+
+2024-05-15 17:22:04,861 [T1] DEBUG LibraryManager
+Load Library - Pdf
+
+2024-05-15 17:22:04,876 [T1] DEBUG LibraryManager
+Load Library - SAP
+
+2024-05-15 17:22:04,893 [T1] DEBUG LibraryManager
+Load Library - Web
+
+2024-05-15 17:22:04,908 [T1] DEBUG LibraryManager
+Load Library - Win
+
+2024-05-15 17:22:04,924 [T1] DEBUG LibraryManager
+Load Library - WorkFlow
+
+2024-05-15 17:22:04,927 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2024-05-15 17:22:05,075 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2024-05-15 17:22:05,082 [T1] INFO  App
+Launch Arguments: Total: 6 |  -eid D_20240515_172202_183 -runtype ProcRunner -ppid 15780
+
+2024-05-15 17:22:05,083 [T1] DEBUG Config
+Refresh Language Information
+
+2024-05-15 17:22:05,083 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2024-05-15 17:22:23,438 [T10] INFO  JobService
+Start Job: MyProcess (Foreground)
+{
+  "JobType": 1,
+  "State": 0,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "StartTime": "2024-05-15 17:22:23",
+  "EndTime": null,
+  "JobId": "Designer_20240515_172223_120",
+  "UserAuthentication": null,
+  "ProcessPath": "C:\\BrityLockNLock\\p_NewProduct_RPA_SCM\\MyProcess.proc",
+  "ProcessId": "9d750e41-5f7b-453c-8d62-6ffc591cde8f",
+  "ProcessVer": "",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 15780,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "EngineID": "D_20240515_172202_183",
+  "EnginePID": 0,
+  "EngineRecommededVersion": "",
+  "JobWorkDir": "C:\\BrityLockNLock\\p_NewProduct_RPA_SCM\\Histories\\20240515_172223_MyProcess_Designer_20240515_172223_120",
+  "JobLogDir": "C:\\BrityLockNLock\\p_NewProduct_RPA_SCM\\Histories\\20240515_172223_MyProcess_Designer_20240515_172223_120\\Log",
+  "JobScreenshotDir": "C:\\BrityLockNLock\\p_NewProduct_RPA_SCM\\Histories\\20240515_172223_MyProcess_Designer_20240515_172223_120\\Log\\Screenshot"
+}
+
+2024-05-15 17:22:23,537 [T7] DEBUG JobService
+Waiting library loading...
+
+2024-05-15 17:22:23,539 [T7] DEBUG Config
+Reload User Settings
+
+2024-05-15 17:22:23,540 [T7] INFO  JobService
+Config Loading Completed.
+
+2024-05-15 17:22:23,541 [T7] DEBUG JobService
+Config Loading Time: 4 ms.
+
+2024-05-15 17:22:23,544 [T7] DEBUG JobService
+Check Shared Token
+
+2024-05-15 17:22:23,545 [T7] DEBUG TokenManager
+Load connection token
+
+2024-05-15 17:22:23,546 [T7] DEBUG TokenManager
+Clear Connection Token - No Shared Token
+
+2024-05-15 17:22:23,551 [T7] DEBUG ServerInformationClient
+get server features for engine bot from config.
+
+2024-05-15 17:22:23,553 [T7] INFO  Config
+Try to load server features from config.
+
+2024-05-15 17:22:23,554 [T7] INFO  TokenManager
+SecurityType : v2
+
+2024-05-15 17:22:23,555 [T7] INFO  JobService
+Shared Token - No Token
+
+2024-05-15 17:22:23,560 [T7] INFO  JobManager
+Create JobManager instance for job MyProcess(Designer_20240515_172223_120)
+
+2024-05-15 17:22:23,565 [T7] INFO  JobRequest
+Job ID : Designer_20240515_172223_120
+Project Path  : C:\BrityLockNLock\p_NewProduct_RPA_SCM\p_NewProduct_RPA_SCM.proj
+Process Name  : MyProcess
+Engine Mode   : Designer
+Requester Type: Designer
+Requester PID : 15780
+
+2024-05-15 17:22:23,568 [T6] INFO  JobRequest
+Start Callback Sender
+
+2024-05-15 17:22:23,568 [T6] DEBUG JobRequest
+Step Callback Interval: 500
+
+2024-05-15 17:22:23,592 [T7] DEBUG ProjectManager
+Set Project Information
+
+2024-05-15 17:22:23,614 [T7] INFO  PlayOptionManager
+PlayOption
+- Step Interval : 1
+- Disable DrawBounds : False
+- Invoke First : False
+- Allow Upload of DumpScreen results : False
+
+2024-05-15 17:22:23,615 [T7] INFO  JobRunner
+Initialize Script Engine
+
+2024-05-15 17:22:23,628 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2024-05-15 17:22:23,646 [T6] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2024-05-15 17:22:23,998 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2024-05-15 17:22:24,001 [T6] DEBUG JobRequest
+Callback - State: Ready
+
+
+2024-05-15 17:22:24,007 [T7] INFO  JobRunnerHook
+HotKey Hook Started
+
+2024-05-15 17:22:24,008 [T7] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2024-05-15 17:22:24,009 [T13-ScriptEngine] INFO  JobRunner
+RunProcess start
+
+2024-05-15 17:22:24,011 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2024-05-15 17:22:24,011 [T13-ScriptEngine] INFO  JobRequest
+Last job life cycle state: Running
+
+2024-05-15 17:22:24,017 [T6] DEBUG JobRequest
+Callback - State: Starting
+
+
+2024-05-15 17:22:24,033 [T6] DEBUG JobRequest
+Callback - State: Running
+
+
+2024-05-15 17:22:24,103 [T13-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play MyProcess,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-15 17:22:24,113 [T13-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play T1_before_Task,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-15 17:22:24,116 [T13-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play tco_kill_process,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-15 17:22:24,119 [T13-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play tco_config,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-15 17:22:24,232 [T13-ScriptEngine] WARN  ProcessDataValidator
+It can be occurred a malfunction to play T_출하실적_Shipment_Performance,
+because this system is different from designed system environment.
+(OS, Resolution, etc)
+
+2024-05-15 17:22:25,063 [T13-ScriptEngine] DEBUG ScreenCapture
+DirectX Screen Capture Initialized.
+
+2024-05-15 17:22:25,153 [T13-ScriptEngine] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2024-05-15 17:22:25,173 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - MyProcess
+##############################################################
+9d750e41-5f7b-453c-8d62-6ffc591cde8f
+MyProcess
+
+
+2024-05-15 17:22:25,216 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 1: S23aa70b068ac4b25adf3c7625fdd18ac (1/3) - (1/37)
+ - [1] RunTask
+
+
+2024-05-15 17:22:25,279 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T1_before_Task
+##############################################################
+2537983c-d928-4592-8529-c1fd941c700d
+T1_before_Task
+
+
+2024-05-15 17:22:25,288 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T1_before_Task
+**************************************************************
+ - STEP 2: S64ba49f48afa47b092176e86cbdd4f53 (1/8) - (2/37)
+ - [1] RunTask
+
+
+2024-05-15 17:22:25,289 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - tco_kill_process
+##############################################################
+a661133b-f01d-4fe3-a057-130dfe2fae3c
+tco_kill_process
+
+
+2024-05-15 17:22:25,304 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: tco_kill_process
+**************************************************************
+ - STEP 3: S87a80ebb00f1497f85cd370223b66663 (1/7) - (3/37)
+ - [1] CloseAll
+
+
+2024-05-15 17:22:25,331 [T13-ScriptEngine] DEBUG UIAHelper
+CloseAll: excel.exe
+
+2024-05-15 17:22:27,703 [T13-ScriptEngine] INFO  JobRunner
+[PASS] TASK: tco_kill_process
+
+2024-05-15 17:22:27,711 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - tco_kill_process
+##############################################################
+a661133b-f01d-4fe3-a057-130dfe2fae3c
+tco_kill_process
+
+
+2024-05-15 17:22:27,718 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T1_before_Task
+**************************************************************
+ - STEP 4: Sbead5a5230b444ceb6bf2294c359c68e (2/8) - (4/37)
+ - [2] Block
+
+
+2024-05-15 17:22:27,734 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 5: Sf8b9ecbc42f14fcb88c646423f5b09b0 (3/8) - (5/37)
+ - [3] ExecuteScript
+
+
+2024-05-15 17:22:27,749 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 6: S8975f1f04dc1428db16185565f43821f (4/8) - (6/37)
+ - [4] RunTask
+
+
+2024-05-15 17:22:27,750 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - tco_config
+##############################################################
+02db42fa-f0c2-4aab-8e19-952fea6305c3
+tco_config
+
+
+2024-05-15 17:22:27,764 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: tco_config
+**************************************************************
+ - STEP 7: S45bab63c4786483698a629950d8440a0 (3/10) - (7/37)
+ - [3] IfThen
+
+
+2024-05-15 17:22:27,780 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 8: Sc972bbc7e1a2424e90fdfec2fd3a95e9 (4/10) - (8/37)
+ - [4] OpenExcel
+
+
+2024-05-15 17:22:31,091 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 9: S35e65cc4f0c040719be071d6a0a6338f (5/10) - (9/37)
+ - [5] ExecuteMacro
+
+
+2024-05-15 17:22:31,890 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 10: S01120c5dd0f34d6f923b5180596a0620 (6/10) - (10/37)
+ - [6] CloseExcel
+
+
+2024-05-15 17:22:31,913 [T13-ScriptEngine] DEBUG ExcelBase
+DisposeExcel
+
+2024-05-15 17:22:33,141 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 11: S902ba0407b5b4a8784a25eacbd6ce2f6 (7/10) - (11/37)
+ - [7] End-IfThen
+
+
+2024-05-15 17:22:33,157 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 12: Sfd50655a7aeb4aa49af6ac3ab6947269 (8/10) - (12/37)
+ - [8] ExecuteScript
+
+
+2024-05-15 17:22:33,188 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 13: Se4310e79f3fd4dfc91c5efb4f6b2c2eb (9/10) - (13/37)
+ - [9] GetSpecialFolder
+
+
+2024-05-15 17:22:33,203 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 14: Sd231ebaf79ba48bd900d24535d9e654e (10/10) - (14/37)
+ - [10] ExecuteScript
+
+
+2024-05-15 17:22:33,203 [T13-ScriptEngine] INFO  JobRunner
+[PASS] TASK: tco_config
+
+2024-05-15 17:22:33,204 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - tco_config
+##############################################################
+02db42fa-f0c2-4aab-8e19-952fea6305c3
+tco_config
+
+
+2024-05-15 17:22:33,218 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T1_before_Task
+**************************************************************
+ - STEP 15: S8498a872428249a5a6fd4ce4d675f950 (5/8) - (15/37)
+ - [5] ExecuteScript
+
+
+2024-05-15 17:22:33,234 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 16: Sd97ace96c2a24b0490f658bdb8348627 (6/8) - (16/37)
+ - [6] ExecuteScript
+
+
+2024-05-15 17:22:33,265 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 17: Sb0b951054b4a434dbabaf2eadcd2ece0 (8/8) - (17/37)
+ - [8] End-Block
+
+
+2024-05-15 17:22:33,265 [T13-ScriptEngine] INFO  JobRunner
+[PASS] TASK: T1_before_Task
+
+2024-05-15 17:22:33,267 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T1_before_Task
+##############################################################
+2537983c-d928-4592-8529-c1fd941c700d
+T1_before_Task
+
+
+2024-05-15 17:22:33,281 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 18: Sed2485d6ec024ac094e4d43fae3c3125 (2/3) - (18/37)
+ - [2] RunTask
+
+
+2024-05-15 17:22:33,282 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T_Copy_File_From_Shared_Folder
+##############################################################
+9aae0956-ad2f-4a09-9ca0-ce08f267c52a
+T_Copy_File_From_Shared_Folder
+
+
+2024-05-15 17:22:33,297 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_Copy_File_From_Shared_Folder
+**************************************************************
+ - STEP 19: S2eadf86603b34054a812b8c3aed480ff (1/5) - (19/37)
+ - [1] IsFileExist
+
+
+2024-05-15 17:22:33,312 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 20: Sb217df47d90a4513b8502bc0aef74a32 (2/5) - (20/37)
+ - [2] IfThen
+
+
+2024-05-15 17:22:33,328 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 21: S61743774f90d4914adccdfa07bd1022d (4/5) - (22/37)
+ - [4] End-IfThen
+
+
+2024-05-15 17:22:33,343 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 22: S9fdc55261d084e31b2de5df33fefc1cc (5/5) - (23/37)
+ - [5] CopyFile
+
+
+2024-05-15 17:22:40,075 [T13-ScriptEngine] INFO  JobRunner
+[PASS] TASK: T_Copy_File_From_Shared_Folder
+
+2024-05-15 17:22:40,076 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T_Copy_File_From_Shared_Folder
+##############################################################
+9aae0956-ad2f-4a09-9ca0-ce08f267c52a
+T_Copy_File_From_Shared_Folder
+
+
+2024-05-15 17:22:40,083 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 23: S623ab20c8c11496381cd30958eececd5 (3/3) - (24/37)
+ - [3] RunTask
+
+
+2024-05-15 17:22:40,091 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T_출하실적_Shipment_Performance
+##############################################################
+694f54f7-f344-4340-bc21-3a225db05942
+T_출하실적_Shipment_Performance
+
+
+2024-05-15 17:22:40,099 [T13-ScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_출하실적_Shipment_Performance
+**************************************************************
+ - STEP 24: S8e80227aefc7465f82ecf9c5b1fa6072 (1/19) - (25/37)
+ - [1] OpenExcel
+
+
+2024-05-15 17:22:43,703 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 25: Sb0638a4267f24a8e9116ea30204f77c4 (2/19) - (26/37)
+ - [2] Click
+
+
+2024-05-15 17:22:43,828 [T4] INFO  UIAEventHandler
+Start UIA event handler
+
+2024-05-15 17:22:44,033 [T4] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2024-05-15 17:22:44,033 [T4] INFO  UIAEventHandler
+Waiting additional time 113 msec for the screen structure is changing. Requested interval: 200 msec.
+
+2024-05-15 17:22:44,585 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 26: S3bcdc825b2744daa9e6ab093a8de0b90 (3/19) - (27/37)
+ - [3] Click
+
+
+2024-05-15 17:22:45,448 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 27: Sd2fd82aeb235483ba77192858fb5760f (4/19) - (28/37)
+ - [4] Click
+
+
+2024-05-15 17:22:45,885 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 28: Saef16f97793449188a99df6f580085ae (5/19) - (29/37)
+ - [5] Click
+
+
+2024-05-15 17:22:46,869 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2024-05-15 17:22:46,869 [T15] INFO  UIAEventHandler
+Waiting additional time 86 msec for the screen structure is changing. Requested interval: 100 msec.
+
+2024-05-15 17:22:47,400 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 29: Sa5c583932ccd47e782ee6849278f048c (6/19) - (30/37)
+ - [6] SetText
+
+
+2024-05-15 17:22:48,857 [T17] WARN  WinApi
+SetForeground Failed.
+ Attach ThreadInput - True
+ Foreground Window - HWND: 10424268, Title: 열기, PID: 13928, ProcessName: EXCEL
+ Target Window - HWND: 7933508, Title: tempfile.xlsx  -  읽기 전용 - Excel, PID: 13928, ProcessName: EXCEL
+
+2024-05-15 17:22:49,747 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 30: S8046defe527243c7accdc0ccdb60b4e0 (7/19) - (31/37)
+ - [7] SetText
+
+
+2024-05-15 17:22:50,906 [T15] WARN  WinApi
+SetForeground Failed.
+ Attach ThreadInput - True
+ Foreground Window - HWND: 10424268, Title: 열기, PID: 13928, ProcessName: EXCEL
+ Target Window - HWND: 7933508, Title: tempfile.xlsx  -  읽기 전용 - Excel, PID: 13928, ProcessName: EXCEL
+
+2024-05-15 17:22:51,767 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 31: Scb235f6c98c442d785c626ddb2c043a0 (8/19) - (32/37)
+ - [8] IsExist
+
+
+2024-05-15 17:22:51,779 [T13-ScriptEngine] INFO  JobRunner
+Try Pause
+
+2024-05-15 17:22:51,779 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Paused
+##############################################################
+
+
+2024-05-15 17:22:51,779 [T13-ScriptEngine] INFO  JobRequest
+Last job life cycle state: Paused
+
+2024-05-15 17:22:51,799 [T6] DEBUG JobRequest
+Callback - State: Paused
+
+
+2024-05-15 17:23:00,589 [T10] INFO  JobService
+ResumeJob
+
+2024-05-15 17:23:00,589 [T10] INFO  JobRunner
+Try Resume
+
+2024-05-15 17:23:00,589 [T10] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2024-05-15 17:23:00,589 [T10] INFO  JobRequest
+Last job life cycle state: Running
+
+2024-05-15 17:23:00,595 [T6] DEBUG JobRequest
+Callback - State: Running
+
+
+2024-05-15 17:23:02,083 [T4] ERROR UIAHelper
+Failed to get element from handle: 7933508 - PID: 13928 (EXCEL)
+=> Operation timed out. (Exception from HRESULT: 0x80131505)
+
+2024-05-15 17:23:05,717 [T4] ERROR UIAHelper
+Failed to get element from point: (2542,111), Operation timed out. (Exception from HRESULT: 0x80131505)
+
+2024-05-15 17:23:07,918 [T4] WARN  WinFinder
+Invalid Application: EXCEL
+ => Object tree does not have this application. It is found by point.
+
+2024-05-15 17:23:09,739 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 32: S3e7304972a5b49da9fbb82f5347f8efa (9/19) - (33/37)
+ - [9] IfThen
+
+
+2024-05-15 17:23:09,755 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 33: Sd11e68f5b01c4d448862cae1fccc9bd6 (16/19) - (34/37)
+ - [16] IsExist
+
+
+2024-05-15 17:23:12,058 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 34: S5510d79942ef4849aa49eee3e43eb237 (17/19) - (35/37)
+ - [17] End-IfThen
+
+
+2024-05-15 17:23:12,074 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 35: S6ea69c19f9a0464e94ce3b7687d9fbdf (18/19) - (36/37)
+ - [18] SelectWorkSheet
+
+
+2024-05-15 17:23:12,526 [T13-ScriptEngine] INFO  JobRequest
+ - STEP 36: Sf8121a0dac3e4866b86e73a33cfd0a01 (19/19) - (37/37)
+ - [19] SelectRange
+
+
+2024-05-15 17:23:13,821 [T13-ScriptEngine] INFO  JobRunner
+[PASS] TASK: T_출하실적_Shipment_Performance
+
+2024-05-15 17:23:13,822 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T_출하실적_Shipment_Performance
+##############################################################
+694f54f7-f344-4340-bc21-3a225db05942
+T_출하실적_Shipment_Performance
+
+
+2024-05-15 17:23:13,822 [T13-ScriptEngine] INFO  JobRunner
+[PASS] TASK: MyProcess
+
+2024-05-15 17:23:13,822 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - MyProcess
+##############################################################
+9d750e41-5f7b-453c-8d62-6ffc591cde8f
+MyProcess
+
+
+2024-05-15 17:23:13,839 [T13-ScriptEngine] INFO  JobRunner
+RunProcess - Job Result: {}
+
+2024-05-15 17:23:13,839 [T13-ScriptEngine] DEBUG JobManager
+Set Result State: Completed
+
+2024-05-15 17:23:13,844 [T13-ScriptEngine] INFO  JobRunner
+Make report.
+
+2024-05-15 17:23:13,899 [T13-ScriptEngine] INFO  JobRunner
+Start to clean up resources.
+
+2024-05-15 17:23:13,900 [T17] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2024-05-15 17:23:13,900 [T13-ScriptEngine] DEBUG JobRunner
+OnProcessCompleted
+
+2024-05-15 17:23:13,908 [T13-ScriptEngine] DEBUG ExcelBase
+DisposeExcel
+
+2024-05-15 17:23:13,931 [T13-ScriptEngine] DEBUG ExcelBase
+DisposeExcel
+
+2024-05-15 17:23:13,952 [T13-ScriptEngine] INFO  JobRunner
+Start to clean up resources.
+
+2024-05-15 17:23:13,954 [T13-ScriptEngine] DEBUG JobRunner
+Remove all libraries
+
+2024-05-15 17:23:13,969 [T13-ScriptEngine] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2024-05-15 17:23:13,971 [T13-ScriptEngine] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2024-05-15 17:23:13,972 [T13-ScriptEngine] DEBUG UIAEventHandler
+Stop UIA event handler
+
+2024-05-15 17:23:14,005 [T13-ScriptEngine] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2024-05-15 17:23:14,005 [T13-ScriptEngine] INFO  JobRunner
+All Resources Clear
+
+2024-05-15 17:23:14,008 [T13-ScriptEngine] DEBUG JobRunner
+OnCompleted
+
+2024-05-15 17:23:14,008 [T13-ScriptEngine] DEBUG JobRunner
+SendJobResult: Completed
+
+2024-05-15 17:23:14,008 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Completed
+##############################################################
+{}
+
+
+2024-05-15 17:23:14,008 [T13-ScriptEngine] INFO  JobRequest
+Last job life cycle state: Completed
+
+2024-05-15 17:23:14,008 [T13-ScriptEngine] INFO  JobRequest
+Update skipped current step informations.
+
+2024-05-15 17:23:14,024 [T6] DEBUG JobRequest
+Callback - State: Completed
+{}
+
+2024-05-15 17:23:14,025 [T13-ScriptEngine] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2024-05-15 17:23:14,039 [T13-ScriptEngine] INFO  JobRunner
+RunProcess end
+
+2024-05-15 17:23:14,041 [T1] INFO  JobService
+Exit - Shutdown Engine BOT
+
+2024-05-15 17:23:14,042 [T6] INFO  JobRequest
+Callback - EngineClosed
+
+2024-05-15 17:23:14,043 [T6] INFO  JobService
+Disconnect agent service
+
+2024-05-15 17:23:14,046 [T6] DEBUG JobRequest
+End of Callback Sender
+
